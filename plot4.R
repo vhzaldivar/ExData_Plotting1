@@ -101,7 +101,8 @@ unzip("household_power_consumption.zip",exdir=".")
  
  ## Adding plot4.... 
  
- ## actually i didn't understand what kind of plot it was 
+ with(mydf, plot(DayTime,Global_reactive_power, type="l", ylab= "Global_reactive_power",
+                 xlab="datetime"))
  
  
  ## Don't forget to close the graphics devie
